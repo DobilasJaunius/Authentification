@@ -1,0 +1,36 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form{
+    width: 250px;
+    margin-top: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    border-radius: 10px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+}
+
+input{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error{
+    color: red;
+    font-size: small;
+    font-weight: 100;
+}
