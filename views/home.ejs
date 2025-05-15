@@ -10,9 +10,15 @@
 <body>
     <h1>Authentication</h1>
 
+    <% if(!user) { %>
+
     <button id="signup-btn">SignUp</button>
     <button id="login-btn">Login</button>
-
+    <% } else {%>
+        <script>
+            location.assign('/mainpage');
+        </script>
+    <%}%>
     <script>
         const signButton = document.getElementById("signup-btn");
         const logButton = document.getElementById("login-btn");
