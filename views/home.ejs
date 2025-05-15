@@ -10,8 +10,22 @@
 <body>
     <h1>Authentication</h1>
 
-    <button id="register-btn">Register</button>
+    <button id="signup-btn">SignUp</button>
     <button id="login-btn">Login</button>
+
+    <script>
+        const signButton = document.getElementById("signup-btn");
+        const logButton = document.getElementById("login-btn");
+
+        signButton.onclick = function(e){
+            location.assign('/signup');
+        };
+
+        logButton.onclick = function(e){
+            location.assign('/login');
+        }
+
+    </script>
 </body>
 
 </html>
