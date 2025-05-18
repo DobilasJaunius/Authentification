@@ -1,35 +1,102 @@
-h1{
-    font-family: 'Courier New', Courier, monospace;
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #006D77;
+    text-align: center;
 }
 
-form{
-    width: 250px;
-    margin-top: 15vw;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightgray;
-    border-radius: 10px;
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+    background: white;
 }
 
-h2{
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 17px 10px 17px;
+    margin-right: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.buttons{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    align-self: flex-end;
+}
+
+.dark {
+    background-color: #006D77;
+    color: #FFFFFF;
+}
+
+.light {
+    background-color: #FFFFFF;
+    color: #006D77;
+}
+
+.container {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Courier New', Courier, monospace;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-input{
-    width: 150px;
-    height: 30px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+.wrapper {
+    min-width: 270px;
+    padding: 0 14px 17px 13px;
+    background-color: #EDF6F9;
+    border-radius: 17px;
+    box-shadow: 0 0 15px #acb3b6;
 }
 
-.error{
+.content {
+    position: relative;
+    height: 70px;
+}
+
+.auth{
+    height: 140px;
+}
+
+.emailDiv {
+    position: absolute;
+    bottom: 80%;
+}
+
+.passwordDiv {
+    position: absolute;
+    bottom: 40%;
+}
+
+.align-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.front{
+    z-index: 1000;
+}
+
+label {
+    margin-right: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #006D77;
+}
+
+input {
+    border: none;
+    padding: 5px 3px 5px 3px;
+    border-radius: 7px;
+    width: 90%;
+}
+
+.error {
     color: red;
     font-size: small;
     font-weight: 100;

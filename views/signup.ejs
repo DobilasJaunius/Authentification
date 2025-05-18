@@ -1,15 +1,26 @@
 <link rel="stylesheet" href="/styles.css">
 
-<form>
-    <h2>Sign up</h2>
-    <label for="email">Email</label>
-    <input type="text" name="email" required />
-    <div class="email error"></div>
+<form>    
+    <div class="container">
+        <div class="wrapper">
+            <h1>Sign up</h1>
+            <div class="content auth">
+                <div class="emailDiv">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" required />
+                    <div class="email error"></div>
+                </div>
 
-    <label for="password">Password</label>
-    <input type="password" name="password" required />
-    <div class="password error"></div>
-    <button>Sign up</button>
+                <div class="passwordDiv">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required />
+                    <div class="password error"></div>
+                </div>
+
+                <button class="dark buttons">Sign up</button>
+            </div> 
+        </div>
+    </div>
 </form>
 
 <script>

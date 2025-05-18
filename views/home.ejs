@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Authentication</h1>
-
+    
     <% if(!user) { %>
-
-    <button id="signup-btn">SignUp</button>
-    <button id="login-btn">Login</button>
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="">Authentication</h1>
+            <div class="content">
+                    <div class="buttons">
+                        <button id="login-btn" class="light">Log in</button>
+                        <button id="signup-btn" class="dark">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <% } else {%>
         <script>
             location.assign('/mainpage');

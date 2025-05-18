@@ -1,6 +1,9 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
+
+const key = process.env.SECRET_KEY;
+
 //handle errors
 const handleErrors = (err) =>{
     console.log(err.message, err.code);
@@ -33,7 +36,7 @@ const handleErrors = (err) =>{
 
 const maxAge = 3 * 24 * 60 * 60; //3 days in seconds
 const createToken = (id) => {
-    return jwt.sign({ id }, 'changethislater secret',{
+    return jwt.sign({ id }, key,{
         expiresIn: maxAge
     });
 };
