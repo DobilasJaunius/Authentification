@@ -1,3 +1,3 @@
 # Authentication
 
-User authentication using MangoDB folowed by Net Ninja tutorial.
+User authentication website using MangoDB and Node.js folowed by Net Ninja tutorial.
